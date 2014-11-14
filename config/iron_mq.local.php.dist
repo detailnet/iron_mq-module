@@ -1,0 +1,8 @@
+<?php
+
+return array(
+    'iron_mq' => array(
+        'token'      => 'change_me',
+        'project_id' => 'change_me',
+    ),
+);

@@ -1,36 +1,7 @@
 <?php
-
-namespace Detail\IronMq;
-
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-
-class Module implements
-    AutoloaderProviderInterface,
-    ConfigProviderInterface
-{
-    /**
-     * {@inheritdoc}
-     */
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\ClassMapAutoloader' => array(
-                __DIR__ . '/autoload_classmap.php',
-            ),
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
-                    __NAMESPACE__ => __DIR__ . '/src/' . str_replace("\\", "/", __NAMESPACE__),
-                ),
-            ),
-        );
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getConfig()
-    {
-        return include __DIR__ . '/config/module.config.php';
-    }
-}
+/**
+ * This file is placed here for compatibility with Zend Framework 2's ModuleManager.
+ * It allows usage of this module even without composer.
+ * The original Module.php is in 'src/Detail/IronMQ' in order to respect PSR-0.
+ */
+require_once __DIR__ . '/src/Detail/IronMQ/Module.php';
