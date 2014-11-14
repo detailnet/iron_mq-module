@@ -31,8 +31,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Detail\\IronMQ\\": "src/",
-            "DetailTest\\IronMQ\\": "tests/"
+            "Detail\\IronMq\\": "src/",
+            "DetailTest\\IronMq\\": "tests/"
         }
     },
     "extra": {

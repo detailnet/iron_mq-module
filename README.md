@@ -30,7 +30,7 @@ Install the module through [Composer](http://getcomposer.org/) using the followi
   6. Open `configs/application.config.php` and add following key to your `modules`:
 
      ```php
-     'Detail\IronMQ',
+     'Detail\IronMq',
      ```
 
   7. Copy `vendor/detailnet/iron_mq-module/config/iron_mq.local.php.dist` into your application's
